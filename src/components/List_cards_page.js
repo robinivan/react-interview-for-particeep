@@ -20,18 +20,14 @@ function List_cards_page(props) {
         }
     }
     const clickFilter = (a) =>{
-        console.log(a)
         let c=false
         for(let j=0; j<bold.length; j++){
             if (bold[j]===a){
                 c=true;
             }
         }
-        console.log(c)
         if (c){
-            console.log('bonjour')
             let b=bold;
-            console.log(bold)
             for (let j=0; j<b.length;j++){
                 if ( b[j] === a) {
                     b.splice(j, 1);
@@ -39,18 +35,10 @@ function List_cards_page(props) {
                 }
             }
             setBold(b);
-            console.log(bold)
         } else{
-            console.log("yo")
             let b=bold
-            console.log(bold)
-            console.log(typeof b)
-
             b.push(a)
-            console.log(b)
             setBold(b)
-            console.log(bold)
-
         }
     }
     const isbold = (a) => {
