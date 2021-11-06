@@ -1,6 +1,33 @@
-# Getting Started with Create React App
+# My Movies list # 
+***
+## Le Project
+1. Lister les films dans des cartes avec: le titre en gras, la catégorie et une jauge type Youtube indiquant le ratio likes/dislikes. Les cartes doivent être côtes à côtes et responsive. Càd que lorsque la fenêtre se réduit, les cartes sautent à la ligne suivante.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Ajouter un bouton dans les cartes permettant de supprimer celle-ci
+
+3. Ajouter un bouton toggle like/dislike
+
+4. Ajouter un filtre par catégorie (de type multiselect) en supposant qu'on ne les connaisse pas à l'avance (il faut donc les récupérer dynamiquement depuis les films). Si tous les films d'une catégorie sont supprimés, celle-ci ne doit plus apparaître.
+
+5. Ajouter un système de pagination avec les fonctionnalités suivantes:
+
+    * Boutons précédent/suivant 
+    * Choix du nombre d'élements affichés par page (4, 8 ou 12).
+
+Prenez des initiatives, il y a des points bonus si
+
+* C'est joli
+* Vous utilisez correctement REDUX
+* Il y a une attention aux détails 
+
+/!\ La suppression du comportement asynchrone dans movies.js entraînera une annulation du test.
+***
+
+## Installation
+
+Clonez ce repository ``git clone``.
+
+Apres dans le dossier entrer la commande ``npm install`` dans votre terminal terminal
 
 ## Available Scripts
 
@@ -39,32 +66,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -8,7 +8,6 @@ import next from "./images/Next.png";
 
 function List_cards_page(props) {
     const [movies,setMovies] =useState([])
-    const [categories,setCategories] =useState([])
     const [filt, setFilt]=useState([])
     const [bold, setBold]=useState([])
     const [pagenumber,setPagenumber]=useState(1)
@@ -77,10 +76,12 @@ function List_cards_page(props) {
     const card = () => {
         if (bold.length===0){
             return movies
+                .filter(a => !filt.includes(a.id))
                 .filter((element, index) => ((index<pagenumber*8)&(index>=(pagenumber-1)*8)))
                 .map(item=><Card movie={item}/>)
         } else {
             return movies
+                .filter(a => !filt.includes(a.id))
                 .filter(a=>bold.includes(a.category))
                 .filter((element, index) => ((index<pagenumber*8)&(index>=(pagenumber-1)*8)))
                 .map(item=><Card movie={item}/>)
@@ -103,7 +104,7 @@ function List_cards_page(props) {
         <div className='main_box'>
             <div className='main_box_line1 header'>
                 <img src='./favicon1.ico' alt='Logo' className='Logo'/>
-                My Movie List
+                My Movies List
             </div>
             <div className='main_box_line'>
                 {filter()}
