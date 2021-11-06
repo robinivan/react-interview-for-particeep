@@ -27,7 +27,7 @@ Prenez des initiatives, il y a des points bonus si
 
 Clonez ce repository ``git clone``.
 
-Apres dans le dossier entrer la commande ``npm install`` dans votre terminal terminal
+Apres dans le dossier entrer la commande ``npm install`` dans votre terminal
 
 ## Available Scripts
 
