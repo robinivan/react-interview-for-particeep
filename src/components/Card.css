@@ -1,0 +1,55 @@
+.inline_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.inline_card_title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Poor Richard";
+}
+.inline_card_type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: gray;
+    font-family: "Poor Richard";
+}
+.oppinions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.oppinions_likes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.oppinions_dislikes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.number{
+    margin: 10px;
+}
+.option{
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+}
+.card_img{
+    height: 100px;
+    width:100px
+}
